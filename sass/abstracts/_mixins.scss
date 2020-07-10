@@ -1,0 +1,30 @@
+// BOOSTERS TEAM
+
+
+@mixin full_container {
+    width: 100%;
+}
+@mixin full_container_margin {
+    width: calc(100% - 100px);
+    margin: 0 50px;
+}
+@mixin container {
+    margin: 0 auto;
+}
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin half_container {
+    width: 50%;
+}
+@mixin font($font , $size, $weight){
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+}
+@mixin b-t-color($color, $bg-color){
+    color: $color;
+    background-color: $bg-color;
+}

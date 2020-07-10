@@ -1,0 +1,16 @@
+//---Common---
+@import "abstracts/variables";
+@import "base/reset";
+@import "base/typography";
+@import "abstracts/mixins";
+@import "abstracts/common";
+@import "abstracts/flex";
+
+//---Layout---
+@import "components/buttons";
+@import "components/inputs";
+@import "layout/top-info";
+@import "layout/top-header";
+@import "layout/banner";
+@import "layout/appointment";
+@import "layout/why-choose-us";

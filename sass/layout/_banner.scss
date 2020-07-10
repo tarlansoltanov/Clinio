@@ -1,0 +1,46 @@
+//-----By Boosters@-----//
+
+
+main {
+  margin-top: -1 * ($line_height-lg + $border-width-sm);
+  background-image: $main_bg_image;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+  .banner {
+    @include full_container;
+    .banner_wrapper {
+      @include full_container_margin;
+      @extend .flex;
+      @extend .justify-center;
+      .intro {
+        width: $introWidth;
+        margin-left: -1.6 * $introWidth;
+        margin-top: $introWidth/3;
+        color: $main-text-color;
+        letter-spacing: $letter_spacing;
+        h1 {
+          @extend .uppercase;
+          @include font($poppins, $font-intro-lg, $normal);
+          line-height: $line_height-md;
+          strong {
+            font-weight: $bold;
+          }
+        }
+        p {
+          @include font($poppins, $font-esm, $bold);
+          color: $secondary-text-color;
+          line-height: $line_height-esm;
+          padding: $padding-lg*4  0;
+        }
+
+        .our_services {
+          @extend .btn;
+          @include font($poppins, $font-md, $bold);
+          padding: $padding-md $padding-elg * 3;
+          border-radius: $border-radius-md;
+        }
+      }
+    }
+  }
+}

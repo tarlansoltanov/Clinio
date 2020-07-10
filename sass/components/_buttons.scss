@@ -1,0 +1,17 @@
+.btn {
+  cursor: pointer;
+  @extend .display-inline-block;
+  line-height: $btn_line_height;
+  @include font($poppins, $font-sm, $bold);
+  color: $third-text-color;
+  border: $border-width-sm solid $btn-border-color;
+  background-color: $btn-bg-color;
+  padding: 0 $padding-lg * 4;
+  transition: all 0.3s ease-in-out;
+  @extend .uppercase;
+  &:hover {
+    border-color: $secondary-border-color;
+    background-color: $secondary-bg-color;
+    color: $main-text-color;
+  }
+}

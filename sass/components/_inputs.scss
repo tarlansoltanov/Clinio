@@ -1,0 +1,12 @@
+.main_input {
+  border-radius: $border-radius-lg;
+  @include font($poppins, $font-sm, $bold-s);
+  line-height: $line_height-md;
+  padding: 0px $padding-lg * 5;
+  border: none;
+  @extend .border-box;
+  @include b-t-color($main-text-color, $secondary-bg-color);
+  &:focus {
+    outline: none;
+  }
+}

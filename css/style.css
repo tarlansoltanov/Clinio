@@ -1,0 +1,660 @@
+/*-----By Boosters@-----*/
+a {
+  text-decoration: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.display-inline-block, .btn, .top_header .top_header_wrapper .appointment_button .book_appointment, main .banner .banner_wrapper .intro .our_services, .appointment .appointment_wrapper .appointment_container .book_appointment .send_message .message_btn, .why_choose_us .why_choose_us_wrapper .why_choose_us_container .why_choose_us_item {
+  display: inline-block;
+}
+
+.relative, .top_header .top_header_wrapper {
+  position: relative;
+}
+
+.absolute, .top_header .top_header_wrapper .appointment_button {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.border-box, .main_input, .appointment .appointment_wrapper .appointment_container .book_appointment .inputs .row .input-1, .appointment .appointment_wrapper .appointment_container .book_appointment .inputs .row .input-2, .appointment .appointment_wrapper .appointment_container .book_appointment .inputs textarea, .appointment .appointment_wrapper .appointment_container .book_appointment, .appointment .appointment_wrapper .appointment_container .contact_us {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.uppercase, .btn, .top_header .top_header_wrapper .appointment_button .book_appointment, main .banner .banner_wrapper .intro .our_services, .appointment .appointment_wrapper .appointment_container .book_appointment .send_message .message_btn, .top_header .top_header_wrapper .navbar .navbar_wrapper .navbar-item a, main .banner .banner_wrapper .intro h1, .appointment .appointment_wrapper .appointment_container .book_appointment .heading h1, .appointment .appointment_wrapper .appointment_container .contact_us .heading h1 {
+  text-transform: uppercase;
+}
+
+.flex, .top_info .top_info_wrapper, .top_info .top_info_wrapper .social, .top_header .top_header_wrapper, .top_header .top_header_wrapper .logo, .top_header .top_header_wrapper .navbar .navbar_wrapper, main .banner .banner_wrapper, .appointment .appointment_wrapper .appointment_container .book_appointment .inputs .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-center, main .banner .banner_wrapper {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.justify-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.justify-end, .top_info .top_info_wrapper .social {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.justify-between, .appointment .appointment_wrapper .appointment_container .book_appointment .inputs .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.justify-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.justify-evenly {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.align-center, .top_info .top_info_wrapper, .top_info .top_info_wrapper .social, .top_header .top_header_wrapper, .top_header .top_header_wrapper .logo, .top_header .top_header_wrapper .navbar .navbar_wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.align-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.align-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.btn, .top_header .top_header_wrapper .appointment_button .book_appointment, main .banner .banner_wrapper .intro .our_services, .appointment .appointment_wrapper .appointment_container .book_appointment .send_message .message_btn {
+  cursor: pointer;
+  line-height: 35px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  border: 1px solid #e9490a;
+  background-color: #e9490a;
+  padding: 0 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover, .top_header .top_header_wrapper .appointment_button .book_appointment:hover, main .banner .banner_wrapper .intro .our_services:hover, .appointment .appointment_wrapper .appointment_container .book_appointment .send_message .message_btn:hover {
+  border-color: #024b6c;
+  background-color: #ffffff;
+  color: #024b6c;
+}
+
+.main_input, .appointment .appointment_wrapper .appointment_container .book_appointment .inputs .row .input-1, .appointment .appointment_wrapper .appointment_container .book_appointment .inputs .row .input-2, .appointment .appointment_wrapper .appointment_container .book_appointment .inputs textarea {
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 50px;
+  padding: 0px 25px;
+  border: none;
+  color: #024b6c;
+  background-color: #ffffff;
+}
+
+.main_input:focus, .appointment .appointment_wrapper .appointment_container .book_appointment .inputs .row .input-1:focus, .appointment .appointment_wrapper .appointment_container .book_appointment .inputs .row .input-2:focus, .appointment .appointment_wrapper .appointment_container .book_appointment .inputs textarea:focus {
+  outline: none;
+}
+
+.top_info {
+  width: 100%;
+}
+
+.top_info .top_info_wrapper {
+  width: calc(100% - 100px);
+  margin: 0 50px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  line-height: 40px;
+  border-bottom: 1px solid #d8e3e8;
+  color: #024b6c;
+}
+
+.top_info .top_info_wrapper .communication {
+  width: 50%;
+}
+
+.top_info .top_info_wrapper .communication span {
+  letter-spacing: 0.35px;
+  margin-right: 50px;
+}
+
+.top_info .top_info_wrapper .communication span i {
+  margin-right: 10px;
+}
+
+.top_info .top_info_wrapper .social {
+  width: 50%;
+  height: 100%;
+}
+
+.top_info .top_info_wrapper .social .social_item {
+  line-height: 40px;
+  margin-left: 20px;
+}
+
+.top_header {
+  width: 100%;
+}
+
+.top_header .top_header_wrapper {
+  width: calc(100% - 100px);
+  margin: 0 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.top_header .top_header_wrapper .logo {
+  height: 100%;
+}
+
+.top_header .top_header_wrapper .logo img {
+  max-height: 40px;
+}
+
+.top_header .top_header_wrapper .navbar {
+  margin-left: 50px;
+}
+
+.top_header .top_header_wrapper .navbar .navbar_wrapper .navbar-item a {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 90px;
+  padding-bottom: 5px;
+  margin: 0 17px;
+  color: #024b6c;
+}
+
+.top_header .top_header_wrapper .navbar .navbar_wrapper .navbar-item a.chosen {
+  border-bottom: 1px solid #024b6c;
+}
+
+.top_header .top_header_wrapper .appointment_button {
+  right: 0;
+  line-height: 90px;
+}
+
+main {
+  margin-top: -91px;
+  background-image: url(../images/main_bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+}
+
+main .banner {
+  width: 100%;
+}
+
+main .banner .banner_wrapper {
+  width: calc(100% - 100px);
+  margin: 0 50px;
+}
+
+main .banner .banner_wrapper .intro {
+  width: 350px;
+  margin-left: -560px;
+  margin-top: 116.66667px;
+  color: #024b6c;
+  letter-spacing: 0.35px;
+}
+
+main .banner .banner_wrapper .intro h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+main .banner .banner_wrapper .intro h1 strong {
+  font-weight: 600;
+}
+
+main .banner .banner_wrapper .intro p {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  color: #638da0;
+  line-height: 16px;
+  padding: 20px 0;
+}
+
+main .banner .banner_wrapper .intro .our_services {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 3px 30px;
+  border-radius: 3px;
+}
+
+.appointment {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.appointment .appointment_wrapper {
+  width: calc(100% - 100px);
+  margin: 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.appointment .appointment_wrapper .appointment_container {
+  margin: 0 auto;
+  max-width: 1230px;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: #ffffff;
+  background-color: #16a0b8;
+  border-radius: 5px;
+}
+
+@media (min-width: 980px) {
+  .appointment .appointment_wrapper .appointment_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 980px) {
+  .appointment .appointment_wrapper .appointment_container {
+    display: block;
+  }
+}
+
+.appointment .appointment_wrapper .appointment_container .book_appointment {
+  padding: 45px;
+  border-right: 1px solid #d8e3e8;
+}
+
+@media (min-width: 980px) {
+  .appointment .appointment_wrapper .appointment_container .book_appointment {
+    width: 65%;
+  }
+}
+
+@media (max-width: 980px) {
+  .appointment .appointment_wrapper .appointment_container .book_appointment {
+    width: 100%;
+  }
+}
+
+.appointment .appointment_wrapper .appointment_container .book_appointment .heading {
+  margin-bottom: 55px;
+}
+
+.appointment .appointment_wrapper .appointment_container .book_appointment .heading h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.appointment .appointment_wrapper .appointment_container .book_appointment .inputs .row {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.appointment .appointment_wrapper .appointment_container .book_appointment .inputs .row .input-1 {
+  width: 48%;
+  margin-right: 4%;
+}
+
+.appointment .appointment_wrapper .appointment_container .book_appointment .inputs .row .input-2 {
+  width: 48%;
+}
+
+.appointment .appointment_wrapper .appointment_container .book_appointment .inputs textarea {
+  width: 100%;
+  height: 170px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.appointment .appointment_wrapper .appointment_container .book_appointment .send_message .message_btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 3px 30px;
+  border-radius: 3px;
+}
+
+.appointment .appointment_wrapper .appointment_container .contact_us {
+  padding: 45px;
+}
+
+@media (min-width: 980px) {
+  .appointment .appointment_wrapper .appointment_container .contact_us {
+    width: 35%;
+  }
+}
+
+@media (max-width: 980px) {
+  .appointment .appointment_wrapper .appointment_container .contact_us {
+    width: 100%;
+  }
+}
+
+.appointment .appointment_wrapper .appointment_container .contact_us .heading {
+  margin-bottom: 55px;
+}
+
+.appointment .appointment_wrapper .appointment_container .contact_us .heading h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.appointment .appointment_wrapper .appointment_container .contact_us .info .address h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.appointment .appointment_wrapper .appointment_container .contact_us .info .address h1 strong {
+  font-weight: 600;
+}
+
+.appointment .appointment_wrapper .appointment_container .contact_us .info .address p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+}
+
+.appointment .appointment_wrapper .appointment_container .contact_us .info .email_hours .email p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+}
+
+.appointment .appointment_wrapper .appointment_container .contact_us .info .email_hours .email p strong {
+  font-weight: 600;
+}
+
+.appointment .appointment_wrapper .appointment_container .contact_us .info .email_hours .working_hours p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 90px;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+}
+
+.appointment .appointment_wrapper .appointment_container .contact_us .info .email_hours .working_hours p strong {
+  font-weight: 600;
+}
+
+.appointment .appointment_wrapper .appointment_container .contact_us .info .number p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+}
+
+.appointment .appointment_wrapper .appointment_container .contact_us .info .number h1 {
+  font-family: "Cabin", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+/*-----By Boosters@-----*/
+.why_choose_us {
+  width: 100%;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.why_choose_us .why_choose_us_wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.why_choose_us .why_choose_us_wrapper .why_choose_us_head {
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.why_choose_us .why_choose_us_wrapper .why_choose_us_head h1 {
+  font-family: "Cabin", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #024b6c;
+}
+
+.why_choose_us .why_choose_us_wrapper .why_choose_us_head h1 strong {
+  font-weight: 600;
+}
+
+.why_choose_us .why_choose_us_wrapper .why_choose_us_container {
+  max-width: 1130px;
+}
+
+.why_choose_us .why_choose_us_wrapper .why_choose_us_container .why_choose_us_item {
+  width: 24%;
+}
+
+.why_choose_us .why_choose_us_wrapper .why_choose_us_container .why_choose_us_item .icon i {
+  color: #01addd;
+  font-size: 82px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.why_choose_us .why_choose_us_wrapper .why_choose_us_container .why_choose_us_item .info {
+  margin-top: 40px;
+}
+
+.why_choose_us .why_choose_us_wrapper .why_choose_us_container .why_choose_us_item .info h1 {
+  font-family: "Cabin", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #024b6c;
+  line-height: 35px;
+  margin: 0px 0px 5px;
+}
+
+.why_choose_us .why_choose_us_wrapper .why_choose_us_container .why_choose_us_item .info p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+  color: #638da0;
+}
+/*# sourceMappingURL=style.css.map */

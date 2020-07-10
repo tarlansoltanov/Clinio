@@ -1,0 +1,52 @@
+/*-----By Boosters@-----*/
+
+.why_choose_us {
+  @include full_container;
+  margin-top: $section_space;
+  @include center;
+  .why_choose_us_wrapper {
+    padding-left: $margin-elg*3;
+    padding-right: $margin-elg*3;
+    .why_choose_us_head {
+      @include full_container;
+      margin-bottom: $margin-elg * 7;
+      h1 {
+        @include font($cabin, $font-elg, $normal);
+        color: $main-text-color;
+        strong {
+          font-weight: $bold;
+        }
+      }
+    }
+    .why_choose_us_container {
+      max-width: $banner_wrapper_width;
+      .why_choose_us_item {
+        @extend .display-inline-block;
+        width: 24%;
+        .icon {
+          i {
+            color: $icons-text-color;
+            font-size: $font-icons;
+            padding-right: $padding-lg*4;
+            padding-top: $padding-lg*2;
+          }
+        }
+        .info {
+            margin-top: $margin-elg*4;
+          h1 {
+            @include font($cabin, $font-md, $bold);
+            color: $main-text-color;
+            line-height: $btn_line_height;
+            margin: 0px 0px $margin-lg;
+          }
+          p {
+            @include font($poppins, $font-sm, $bold);
+            line-height: $line_height-nm;
+            letter-spacing: $letter_spacing;
+            color: $secondary-text-color;
+          }
+        }
+      }
+    }
+  }
+}

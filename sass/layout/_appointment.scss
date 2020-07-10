@@ -1,0 +1,146 @@
+//-----By Boosters@-----//
+
+.appointment {
+  @include full_container;
+  margin-top: $section_space;
+  .appointment_wrapper {
+    @include full_container_margin;
+    @include center;
+    .appointment_container {
+      @include container;
+      @media (min-width: 980px) {
+        display: flex;
+      }
+      @media (max-width: 980px) {
+        display: block;
+      }
+      max-width: $section-width;
+      margin-left: $margin-elg * 3;
+      margin-right: $margin-elg * 3;
+      @include b-t-color($third-text-color, $appointment-bg-color);
+      border-radius: $border-radius-lg;
+      .book_appointment {
+        @media (min-width: 980px) {
+          width: 65%;
+        }
+        @media (max-width: 980px) {
+          @include full_container;
+        }
+        @extend .border-box;
+        padding: $padding-lg * 9;
+        border-right: $border-width-sm solid $main-border-color;
+        .heading {
+          margin-bottom: $margin-lg * 11;
+          h1 {
+            @extend .uppercase;
+            @include font($poppins, $font-sm, $bold);
+          }
+        }
+        .inputs {
+          .row {
+            @include full_container;
+            @extend .flex;
+            @extend .justify-between;
+            margin-bottom: $margin-elg * 3;
+            .input-1 {
+              @extend .main_input;
+              width: 48%;
+              margin-right: 4%;
+            }
+            .input-2 {
+              @extend .main_input;
+              width: 48%;
+            }
+          }
+          textarea {
+            @extend .main_input;
+            width: 100%;
+            height: $textarea-height;
+            padding-top: $padding-lg * 4;
+            padding-bottom: $padding-lg * 4;
+            margin-bottom: $margin-elg * 3;
+          }
+        }
+        .send_message {
+          .message_btn {
+            @extend .btn;
+            @extend .btn;
+            @include font($poppins, $font-sm, $bold);
+            padding: $padding-md $padding-elg * 3;
+            border-radius: $border-radius-md;
+          }
+        }
+      }
+      .contact_us {
+        @media (min-width: 980px) {
+          width: 35%;
+        }
+        @media (max-width: 980px) {
+          @include full_container;
+        }
+        @extend .border-box;
+        padding: $padding-lg * 9;
+        .heading {
+          margin-bottom: $margin-lg * 11;
+          h1 {
+            @extend .uppercase;
+            @include font($poppins, $font-sm, $bold);
+          }
+        }
+        .info {
+          .address {
+            h1 {
+              @include font($poppins, $font-lg, $normal);
+              margin-bottom: $margin-lg * 3;
+              strong {
+                font-weight: $bold;
+              }
+            }
+            p {
+              @include font($poppins, $font-sm, $normal);
+              margin-bottom: $margin-lg * 10;
+              line-height: $line_height-nm;
+              letter-spacing: $letter_spacing;
+            }
+          }
+          .email_hours {
+            .email {
+              p {
+                @include font($poppins, $font-sm, $normal);
+                margin-bottom: $margin-lg * 2;
+                line-height: $line_height-nm;
+                letter-spacing: $letter_spacing;
+                strong {
+                  font-weight: $bold;
+                }
+              }
+            }
+
+            .working_hours {
+              p {
+                @include font($poppins, $font-sm, $normal);
+                margin-bottom: $margin-elg * 9;
+                line-height: $line_height-nm;
+                letter-spacing: $letter_spacing;
+                strong {
+                  font-weight: $bold;
+                }
+              }
+            }
+          }
+          .number {
+            p {
+              @include font($poppins, $font-sm, $bold);
+              margin-bottom: $margin-lg * 4;
+              line-height: $line_height-nm;
+              letter-spacing: $letter_spacing;
+            }
+            h1 {
+              @include font($cabin, $font-lg + 2px, $bold);
+            }
+          }
+        }
+      }
+    }
+  }
+}

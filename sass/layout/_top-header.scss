@@ -1,0 +1,49 @@
+//-----By Boosters@-----//
+
+
+.top_header {
+  @include full_container;
+  .top_header_wrapper {
+    @extend .relative;
+    @include full_container_margin;
+    @extend .flex;
+    @extend .align-center;
+    @include font($poppins, $font-sm, $normal);
+    .logo {
+      height: 100%;
+      @extend .flex;
+      @extend .align-center;
+      img {
+        max-height: $logoHeight;
+      }
+    }
+    .navbar {
+      margin-left: $margin-elg * 5;
+      .navbar_wrapper {
+        @extend .flex;
+        @extend .align-center;
+        .navbar-item {
+          a {
+            @include font($poppins, $font-sm, $bold);
+            line-height: $line_height-lg;
+            padding-bottom: $padding-lg;
+            margin: 0 17px;
+            color: $main-text-color;
+            @extend .uppercase;
+            &.chosen {
+              border-bottom: $border-width-sm solid $secondary-border-color;
+            }
+          }
+        }
+      }
+    }
+    .appointment_button {
+      @extend .absolute;
+      right: 0;
+      line-height: $line_height-lg;
+      .book_appointment {
+        @extend .btn;
+      }
+    }
+  }
+}

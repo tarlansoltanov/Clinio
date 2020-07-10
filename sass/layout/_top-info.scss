@@ -1,0 +1,37 @@
+//-----By Boosters@-----//
+
+
+.top_info {
+  @include full_container;
+  .top_info_wrapper {
+    @include full_container_margin;
+    @extend .flex;
+    @extend .align-center;
+    font-size: $font-sm;
+    font-family: $poppins;
+    line-height: $line_height-sm;
+    border-bottom: $border-width-sm solid $main-border-color;
+    color: $main-text-color;
+    .communication {
+      @include half_container;
+      span {
+        i {
+            margin-right: $margin-lg*2;
+        } 
+        letter-spacing: $letter_spacing;
+        margin-right: $margin-elg*5;
+      }
+    }
+    .social {
+      @include half_container;
+      @extend .flex;
+      @extend .align-center;
+      @extend .justify-end;
+      height: 100%;
+      .social_item {
+        line-height: $line_height-sm;
+        margin-left: $margin-lg * 4;
+      }
+    }
+  }
+}
